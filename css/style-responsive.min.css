@@ -1,0 +1,233 @@
+@media only screen and (max-width: 768px) {
+  .btn-nav {
+    display: block;
+  }
+  #showMenu {
+    font-size: 22px;
+    display: block;
+    position: relative;
+    transition: var(--transition);
+    cursor: pointer;
+    margin-right: 30px;
+  }
+  #hideMenu {
+    font-size: 22px;
+    position: relative;
+    display: none;
+    transition: var(--transition);
+    cursor: pointer;
+    margin-right: 30px;
+  }
+  .navbar .logo {
+    width: 120px;
+    position: relative;
+    margin: 5px 30px 0;
+  }
+  .nav-links {
+    background-color: var(--grey);
+    position: absolute;
+    width: 100%;
+    height: auto;
+    padding: 30px 0 10px;
+    margin-top: 200px;
+    z-index: -200;
+    transform: translateY(-100%);
+    transition: var(--transition);
+  }
+  .navbar .nav-links ul {
+    display: list-item;
+    position: relative;
+    text-align: center;
+    margin-left: 0;
+  }
+  .navbar .nav-links ul li:hover:after {
+    width: 20%;
+  }
+  .navbar .nav-links ul .active::after,
+  .navbar .nav-links ul .active a {
+    width: 20%;
+    color: var(--green);
+  }
+  /*==home==*/
+  .btn-group {
+    display: none;
+  }
+  .border-col {
+    border: 3px solid var(--grey);
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 30px;
+    width: auto;
+    text-align: left;
+    position: relative;
+  }
+  .content-page img {
+    width: 200px;
+    border-radius: 100%;
+  }
+  .hello {
+    font-size: 10px;
+  }
+  .desc {
+    border-left: 3px solid var(--white);
+    padding-left: 10px;
+    text-align: left;
+    justify-content: left;
+  }
+  h3 span {
+    color: var(--green);
+  }
+  .name {
+    font-size: 25px;
+    margin-top: -5px;
+    margin-bottom: -10px;
+  }
+  #job {
+    display: inline-flex;
+    margin-top: 5px;
+  }
+  #job p {
+    font-size: 15px;
+  }
+  .typing {
+    height: 30px;
+    width: 130px;
+    margin-top: -3px;
+    line-height: 30px;
+    text-align: left;
+    margin-left: -30px;
+    overflow: hidden;
+  }
+  .typing li span::after {
+    content: "";
+    position: absolute;
+    height: 17px;
+    width: 100%;
+    top: 3px;
+    background-color: var(--black);
+    border-left: 2px solid var(--black);
+    left: 0;
+    animation: typing 2s steps(50) infinite;
+  }
+  .typing li span {
+    position: relative;
+    color: var(--green);
+    font-weight: 500;
+  }
+  .typing li {
+    list-style: none;
+    font-size: 15px;
+    font-weight: 500;
+    position: relative;
+    top: 0;
+    color: var(--green);
+    animation: slide 6s steps(3) infinite;
+  }
+  @keyframes typing {
+    100% {
+      left: 100%;
+      margin: 0 -20px 0 20px;
+    }
+  }
+  @keyframes slide {
+    100% {
+      top: -90px;
+    }
+  }
+  /*==About Page==*/
+
+  .about-text {
+    display: list-item;
+  }
+  .school ul {
+    margin-left: -30px;
+  }
+  .school ul li {
+    font-size: 13px;
+  }
+  .personal-data ul li {
+    font-size: 13px;
+  }
+  .border-col p {
+    font-size: 13px;
+  }
+  /*==Skill Page==*/
+  .card-skill-html {
+    display: flex;
+    justify-content: center;
+  }
+  .card-skill-css {
+    display: flex;
+    justify-content: center;
+  }
+  .card-skill-java {
+    display: flex;
+    justify-content: center;
+  }
+  .card-skill-php {
+    display: flex;
+    justify-content: center;
+  }
+  /*==Project==*/
+  .row-project {
+    display: table;
+    width: 100%;
+    clear: both;
+    border: 3px solid var(--grey);
+    border-radius: 10px;
+    padding: 0;
+    padding: 0;
+  }
+  .project-card img {
+    width: 100%;
+    border-radius: 0;
+  }
+  .project-card {
+    width: 90%;
+    display: block;
+    margin-bottom: 20px;
+    margin: 10px;
+  }
+  /*==Page==*/
+  .border-row {
+    display: list-item;
+    width: auto;
+    border: none;
+    padding: 0;
+  }
+  /*==Footer==*/
+  .footer {
+    width: 100%;
+  }
+  .footer .row {
+    display: grid;
+    grid-template-columns: 100%;
+    padding: 10px;
+    justify-content: center;
+  }
+  .footer .col {
+    clear: both;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer .copy {
+    margin-top: 10px;
+  }
+  .footer .title {
+    margin-top: 10px;
+  }
+  .maps {
+    width: 100%;
+    height: 300px;
+  }
+  .contact h1 {
+    font-size: 15px;
+  }
+  .contact p {
+    font-size: 13px;
+  }
+  .contact {
+    padding: 0;
+  }
+}
